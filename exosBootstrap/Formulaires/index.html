@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Formulaires</title>
+</head>
+<body>
+
+<section class="container">
+    <h1>Formulaires</h1>
+        <p>Donnez à vos formulaires une structure - de l'in en ligne à l'horizontale en passant par les implémentations de grille personnalisées - 
+            avec nos options de mise en page de formulaire.</p>
+        <p>Chaque groupe de champs de forme devrait résider dans une <form>élément. Bootstrap ne fournit aucun style par défaut pour le <form>élément,
+            mais il existe des fonctionnalités puissantes de navigateur qui sont fournies par défaut.
+
+            Nouveaux formulaires de navigation ? Envisager d'examiner les documents du formulaire MDN pour 
+            avoir une vue d'ensemble et une liste complète des attributs disponibles.
+            <button>s à l'intérieur d'un <form>par défaut de type="submit", s'efforcer donc d'être spécifique et d'inclure toujours un type.
+            Vous pouvez désactiver chaque élément de formulaire dans un formulaire avec le disabledattribut sur la <form>.
+
+            Puisque Bootstrap s'applique display: blocket width: 100%à presque tous nos contrôles de formulaire, les formulaires vont par défaut empiler verticalement. 
+            Des classes supplémentaires peuvent être utilisées pour faire varier cette présentation sur une base papier-forme.</p>
+               
+
+                       
+</section>
+<section class="container">
+    <h2>Utilités</h2>
+    Les services de marge sont le moyen le plus facile d'ajouter une structure aux formes. Ils fournissent 
+    un groupement de base d'étiquettes, des contrôles, du texte de formulaire optionnel et des messages de 
+    validation de formulaire. Nous recommandons de nous en tenir à margin-bottomles services publics et en 
+    utilisant une seule direction tout au long de la forme pour la cohérence.
+
+    N'hésitez pas à construire vos formulaires comme vous voulez, avec <fieldset>s, <div>s, ou presque tout autre élément.
+    <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label"> Exemple d'étiquette </label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Autre étiquette</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+      </div>
+</section>
+<hr>
+<section class="container">
+    <h2>Grille de forme</h2>
+    Des formes plus complexes peuvent être construites à l'aide de nos classes de grille. Utilisez-les pour les
+     mises en page qui nécessitent plusieurs colonnes, des largeurs variées et des options d'alignement 
+     supplémentaires. Exige la $enable-grid-classesSass variable à permettre (par défaut).
+     <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+        </div>
+      </div>
+</section>
+<hr>
+<section class="container">
+
+    <h2>Gouttières</h2>
+    <p>    En ajoutant des classes de modificateurs de gouttière, vous pouvez avoir le contrôle de la 
+        largeur de la gouttière dans la ligne en tant que direction de bloc. Il est également nécessaire que $enable-grid-
+        classesSass variable à permettre (par défaut).</p>
+
+    <div class="row g-3">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+        </div>
+      </div>
+</section>
+    
+<hr>
+
+<section class="container">
+   <p>Des configurations plus complexes peuvent également être créées avec le système de grille.</p> 
+    <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Courriel</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label"> Mot de passe </label>
+          <input type="password" class="form-control" id="inputPassword4">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Adresse</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Adresse 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">Ville</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">État</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choisie...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+
+                Vérifiez-moi
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Se connecter</button>
+        </div>
+      </form>
+</section>
+<hr>
+<section class="container">
+<h2>Forme horizontale</h2>
+<p>Créer des formes horizontales avec la grille en ajoutant le .row pour former des groupes et utiliser
+    .col-*-*classes pour spécifier la largeur de vos étiquettes et commandes. Assurez-vous d'ajouter .col-
+    form-labelà votre <label>s ainsi qu'ils sont centrés verticalement avec leurs commandes de formulaire 
+       associées.</p>
+       <p>Parfois, vous avez peut-être besoin d'utiliser des utilitaires de marge ou de remplissage pour créer cet
+         alignement parfait dont vous avez besoin. Par exemple, nous avons supprimé le padding-topsur notre 
+         étiquette d'entrée radio empilée afin de mieux aligner la ligne de base du texte.</p>
+
+         <form>
+            <div class="row mb-3">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Courriel</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="inputPassword3" class="col-sm-2 col-form-label">Mot de passe</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3">
+              </div>
+            </div>
+            <fieldset class="row mb-3">
+              <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                  <label class="form-check-label" for="gridRadios1">
+                    Première radio 
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                  <label class="form-check-label" for="gridRadios2">
+                    Deuxième radio 
+                  </label>
+                </div>
+                <div class="form-check disabled">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+                  <label class="form-check-label" for="gridRadios3">
+                    Troisième radio désactivée                   </label>
+                </div>
+              </div>
+            </fieldset>
+            <div class="row mb-3">
+              <div class="col-sm-10 offset-sm-2">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck1">
+                  <label class="form-check-label" for="gridCheck1">
+                    Exemple de case à cocher
+                  </label>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Se connecter</button>
+          </form>
+
+</section>
+<hr>
+<section class="container">
+    <h2>Encollage de l'étiquette de forme horizontale</h2>
+    <p>Assurez-vous d'utiliser .col-form-label-smou .col-form-label-lgà votre <label>s ou <legend>s pour 
+        suivre correctement la taille de .form-control-lget .form-control-sm.</p>
+        <div class="row mb-3">
+            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Courriel</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="colFormLabel" class="col-sm-2 col-form-label">Courriel</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="colFormLabel" placeholder="col-form-label">
+            </div>
+          </div>
+          <div class="row">
+            <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Courriel</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg">
+            </div>
+          </div>
+</section>
+<hr>
+<section class="container">
+
+    <h2>Coinage de la colonne</h2>
+
+    <p>Comme le montrent les exemples précédents, notre système de grille vous permet de placer n'importe quel 
+        nombre de .cols à l'intérieur d'un .row. Ils partageront la largeur disponible à parts égales entre eux. Vous
+         pouvez également choisir un sous-ensemble de vos colonnes pour prendre plus ou moins de place, tandis
+          que le reste .cols s s s split le reste, avec des classes de colonne spécifiques comme .col-sm-7.</p>
+          <div class="row g-3">
+            <div class="col-sm-7">
+              <input type="text" class="form-control" placeholder="Ville" aria-label="Ville">
+            </div>
+            <div class="col-sm">
+              <input type="text" class="form-control" placeholder="Pays" aria-label="Pays">
+            </div>
+            <div class="col-sm">
+              <input type="text" class="form-control" placeholder="Zip" aria-label="Zip">
+            </div>
+          </div>
+</section>
+<hr>
+<section class="container">
+<h2>Auto-dimensionnement</h2>
+<p>L'exemple ci-dessous utilise un utilitaire flexbox pour centrer verticalement le contenu et les changements.
+    .colà .col-autoafin que vos colonnes n'aient pris autant de place que nécessaire. En d'autres termes, la 
+    taille de la colonne elle-même en fonction du contenu.</p>
+    <form class="row gy-2 gx-3 align-items-center">
+        <div class="col-auto">
+          <label class="visually-hidden" for="autoSizingInput">Nom</label>
+          <input type="text" class="form-control" id="autoSizingInput" placeholder="Jane Doe">
+        </div>
+        <div class="col-auto">
+          <label class="visually-hidden" for="autoSizingInputGroup">Prénoms</label>
+          <div class="input-group">
+            <div class="input-group-text">@</div>
+            <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+          </div>
+        </div>
+        <div class="col-auto">
+          <label class="visually-hidden" for="autoSizingSelect">Choisissez</label>
+          <select class="form-select" id="autoSizingSelect">
+            <option selected>Choisissez...</option>
+            <option value="1">Un</option>
+            <option value="2">Deux</option>
+            <option value="3">trois</option>
+          </select>
+        </div>
+        <div class="col-auto">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+            <label class="form-check-label" for="autoSizingCheck">        
+                Souvenez-vous de moi
+
+            </label>
+          </div>
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary">Soumission</button>
+        </div>
+      </form>
+
+</section>
+<hr>
+<section class="container">
+<div>
+    <p>Vous pouvez ensuite remixer cela à nouveau avec des classes de colonne spécifiques à la taille.</p>
+</div>
+<form class="row gx-3 gy-2 align-items-center">
+    <div class="col-sm-3">
+      <label class="visually-hidden" for="specificSizeInputName">Nom</label>
+      <input type="text" class="form-control" id="specificSizeInputName" placeholder="Jane Doe">
+    </div>
+    <div class="col-sm-3">
+      <label class="visually-hidden" for="specificSizeInputGroupUsername">Prénoms</label>
+      <div class="input-group">
+        <div class="input-group-text">@</div>
+        <input type="text" class="form-control" id="specificSizeInputGroupUsername" placeholder="Username">
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <label class="visually-hidden" for="specificSizeSelect">Preference</label>
+      <select class="form-select" id="specificSizeSelect">
+        <option selected>Choose...</option>
+        <option value="1">Un</option>
+        <option value="2">Deux</option>
+        <option value="3">Trois</option>
+      </select>
+    </div>
+    <div class="col-auto">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+        <label class="form-check-label" for="autoSizingCheck2">
+            Souvenez-vous de moi        </label>
+      </div>
+    </div>
+    <div class="col-auto">
+      <button type="submit" class="btn btn-primary">Soumission</button>
+    </div>
+  </form>
+
+</section>
+
+<hr>
+<section class="container bg-body-secondary">
+
+    <h2>Formulaires en ligne</h2>
+    <p>Utiliser le .row-cols-*classes pour créer des configurations horizontales réactives. En ajoutant des classes de 
+        modificateurs de gouttière, nous aurons des gouttières dans les directions horizontales et verticales. Sur les 
+        écrans mobiles étroits, le .col-12aide à empiler les commandes de forme et plus encore. Le .align-items-
+        centeraligne les éléments de forme sur le milieu, en faisant .form-checkboxs'aligner correctement.</p>
+        <form class="row row-cols-lg-auto g-3 align-items-center">
+            <div class="col-12">
+              <label class="visually-hidden" for="inlineFormInputGroupUsername">Utilisateur</label>
+              <div class="input-group">
+                <div class="input-group-text">@</div>
+                <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+              </div>
+            </div>
+          
+            <div class="col-12">
+              <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+              <select class="form-select" id="inlineFormSelectPref">
+                <option selected>Choisie...</option>
+                <option value="1">Un</option>
+                <option value="2">Deux</option>
+                <option value="3">trois</option>
+              </select>
+            </div>
+          
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                <label class="form-check-label" for="inlineFormCheck">
+                  Remember me
+                </label>
+              </div>
+            </div>
+          
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Soumition</button>
+            </div>
+          </form>
+</section>
+<hr>
+<footer>
+    M'boiboi4
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+     crossorigin="anonymous"></script>
+
+    
+</body>
+</html>

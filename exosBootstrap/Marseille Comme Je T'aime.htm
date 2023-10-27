@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="Product%20example%20%C2%B7%20Bootstrap%20v5.3_fichiers/product.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Marseille Comme Je T'aime</title>
+</head>
+
+  <body>
+    
+
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (dark)">
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="img/svg/ville-de-marseille-1.svg"></use></svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="dark" aria-pressed="true">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+            Dark
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    
+<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="aperture" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10"></circle>
+    <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path>
+  </symbol>
+  <symbol id="cart" viewBox="0 0 16 16">
+    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+  </symbol>
+  <symbol id="chevron-right" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+  </symbol>
+</svg>
+
+<nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
+  <div class="container">
+     
+  
+  <img src="img/Marseille/logo-made-in-marseille-420x60-1 - Copie.png" class="bg-dark-subtle" alt="" width="130" height="45">
+  
+   <a href="https://www.marseille-tourisme.com/"> <img class="navbar w-15 h-25" src="img/svg/Armoiries_de_Marseille.svg.png" alt="" width="100" height="100"></a>
+    <a class="navbar-brand d-md-none" href="https://www.marseille-tourisme.com/">
+      <svg class="bi" width="24" height="24"><use xlink:href="#aperture"></use></svg>
+      Aperture
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="#offcanvas" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="#offcanvas" aria-labelledby="#offcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="#offcanvasLabel">Aperture</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav flex-grow-1 justify-content-between">
+          <li class="nav-item"><a class="nav-link" href="https://www.marseille-tourisme.com/">
+            <svg class="bi" width="24" height="24"><use xlink:href="#aperture"></use></svg>
+          </a></li>
+          <li class="nav-item"><a class="nav-link fs-6" href="https://www.marseille-tourisme.com/decouvrez-marseille/incontournables/">Découvrir Marseille</a></li>
+          <li class="nav-item"><a class="nav-link fs-5" href="https://www.marseille-tourisme.com/organisez-votre-sejour/hebergements/">Organisez votre séjour</a></li>
+          <li class="nav-item"><a class="nav-link fs-6" href="https://www.marseille-tourisme.com/vivez-marseille-blog/agenda/">Actualités</a></li>
+          <li class="nav-item"><a class="nav-link fs-6" href=https://www.marseille-tourisme.com/marseille-destination-innovante-et-durable/les-offres-de-tourisme-durable-a-marseille/commerces-et-artisans-durables-a-marseille/">Marseille durable</a></li>
+          <li class="nav-item"><a class="nav-link fs-6" href="https://www.google.com/search?client=firefox-b-d&sca_esv=573962864&q=%C3%A9difices+de+marseille&tbm=isch&source=lnms&sa=X&ved=2ahUKEwjR0dyziP2BAxUgRaQEHUcLBBYQ0pQJegQIDBAB&biw=1920&bih=955&dpr=1">Edifices</a></li>
+
+            
+          </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+ 
+<hr>
+<a href="Marseille visite guidé.html"><p class="text-center bg-primary-subtle h-100 fs-1">Marseille comme je t'aime</p> </a>
+<hr>
+<section>
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/Marseille/1493038621614.jpg" class="d-block w-100" alt="..." height="300">
+        </div>
+        <div class="carousel-item">
+          <img src="img/Marseille/1493038630039.jpg" class="d-block w-100" alt="..." height="300">
+        </div>
+        <div class="carousel-item">
+          <img src="img/Marseille/1493038620331.jpg" class="d-block w-100" alt="..." height="300">
+        </div>
+      </div>
+    </div>
+
+</section>
+<hr>
+<section>
+ 
+
+
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-primary-subtle">
+    <div class="col-md-6 p-lg-5 mx-auto my-5">
+      <h1 class="display-3 fw-bold bg-primary-subtle border-top fs-1">Une ville engagée aux multi peuples</h1>
+      <h3 class="fw-normal text-muted mb-3 fs-6" >2600 ans d’histoire.
+        Marseille est la plus ancienne ville de France. 
+        Son architecture actuelle et sa population sont le reflet de 2600 ans d’histoire.
+         Les richesses de son patrimoine assurent aujourd’hui encore et pour les générations futures, 
+        la pérennité du lien qui existe avec ce passé foisonnant.</h3>
+      <img class="container w-100 h-100" src="img/Marseille/map-hp-zoomlarge-2.svg" alt="" >
+      
+      
+      <div class="d-flex gap-3 justify-content-center lead fw-normal">
+        <a class="icon-link" href="https://www.marseille.fr/decouvrir-marseille/histoire-de-marseille/une-mosaique-de-111-quartiers/">
+          Lire Plus
+          <img class="bi" src="img/Marseille/marseille_3668.jpg"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+        <a class="icon-link" href="https://www.marseille.fr/">
+          Visite Guidé
+          <img class="bi" src="img/Marseille/marseille_3668.jpg"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div>
+    </div>
+    <div class=" shadow-sm d-none d-md-block rounded float-end"><img src="img/svg/ville-de-marseille-1.svg" alt="" width="200" height="200" ></div>
+    <div class=" shadow-sm d-none d-md-block rounded float-start"><img src="img/svg/marseille.svg" alt="" width="200" height="200"></div>
+  </div>
+</section>
+<main>
+  <section>
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+      <div class="text-bg-info me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+          <h2 class="display-5 focus-ring ">La célèbre basilique Notre dame de la garde</h2>
+          <p class="lead">du haut de sa colline veille sur les marseillais.</p>
+        </div>
+        <div class="bg-body-tertiary shadow-sm mx-auto" style="width: 100%; height: 300px; border-radius: 21px 21px 0 0;">
+          <a class="icon-link" href="https://www.marseille-tourisme.com/decouvrez-marseille/culture-et-patrimoine/sites-et-monuments/la-basilique-notre-dame-de-la-garde/">
+          <img class="bg-body-tertiary w-80 h-85" src="img/Marseille/1493038620840.jpg" alt=""></a>
+        </div>
+      </div>
+      <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+          <h2 class="display-5">abbaye-saint-victor</h2>
+          <p class="lead">La visite de cet édifice et de ses cryptes vous plonge dans le passé religieux de la ville et offre une vue imprenable sur le Vieux-Port.</p>
+        </div>
+        <div class="bg-dark shadow-sm mx-auto" style="width: 100%; height: 300px; border-radius: 21px 21px 0 0;">
+          <a class="icon-link" href="https://www.marseille-tourisme.com/decouvrez-marseille/culture-et-patrimoine/sites-et-monuments/abbaye-st-victor/">
+        <img class="bg-body-tertiary w-65 h-20"  src="img/Marseille/abbaye-saint-victorjorengo2-640x480.jpg" alt=""></a>
+      </div>
+      </div>
+    </div>
+  
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+      <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+  <h2 class="display-5">Les calanques</h2>
+          <p class="lead">Découvrez Une merveille de la nature.</p>
+        </div>
+        <div class="bg-body-tertiary shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+          <a class="icon-link" href="https://www.marseille-tourisme.com/decouvrez-marseille/calanques-plages-et-nature/les-calanques-de-marseille/">
+            <img class="bg-body-secondary w-80 h-50"  src="img/Marseille/calanques-sormiou-petit-portobjimagesotcm-640x480.jpg" alt=""></a>
+        </div>
+      </div>
+      <div class="text-bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+          <h2 class="display-5">Soirée Soleil Couchant</h2>
+          <p class="lead">Ce soir, la rade de Marseille prend ses couleurs chaudes, le panorama change et vire au sublime, le Roucas n’est plus tout à fait blanc, le château d’If et notre Dame de la Garde sont encore plus beaux.. Profitez de ce moment unique pour découvrir le….</p>
+        </div>
+        <div class="bg-body-tertiary shadow-sm mx-auto" style="width: 100%; height: 300px; border-radius: 21px 21px 0 0;">
+          <a class="icon-link" href="https://www.marseille-tourisme.com/experience/soiree-soleil-couchant-marseille-fr-4364910/">
+          <img class="bg-body-tertiary w-80 h-85"  src="img/Marseille/image.jpg" alt=""></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+      <div class="bg-info-subtle me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+          <h2 class="display-5">La Mairie </h2>
+          <p class="lead">Les offres de service civique à la Ville de Marseille.</p>
+        </div>
+        <div class="bg-gradient shadow-sm mx-auto" style="width: 100%; height: 300px; border-radius: 21px 21px 0 0;">
+          <a class="icon-link" href="https://www.marseille.fr/mairie/emplois/les-offres-de-service-civique">
+          <img class="bg-body-tertiary w-75 h-75"  src="img/Marseille/35061_1554800749270_1212738742_2620132_3086991_n.jpg" alt=""></a>
+        </div>
+      </div>
+      <div class="bg-primary-subtle me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+          <h2 class="display-5">Perspèctive</h2>
+          <p class="lead">Marseille Comme je t'aime.</p>
+        </div>
+        <div class="bg-primary-subtle shadow-sm mx-auto" style="width: 100%; height: 300px; border-radius: 21px 21px 0 0;">
+          <a class="icon-link" href="https://www.marseille.fr/economie/cr%C3%A9ation-dentreprise-et-soutien-au-d%C3%A9veloppement/accompagnement-et-financement">
+          <img class="bg-body-tertiary w-80 h-55"  src="img/Marseille/1493038622658.jpg" alt=""></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="bg-dark-subtle d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+      <div class="bg-warning-subtle me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+          <h2 class="display-5">LE PANIER</h2>
+          <p class="lead">Le plus vieux quartier de Marseille.</p>
+        </div>
+        <div class="bg-opacity-75 shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+          <a class="icon-link" href="https://www.marseille.fr/mairie/les-vieux-quartiers-dans-les-annees-40">
+          <img class="bg-body-tertiary focus-ring w-100 h-80"  src="img/Marseille/67240160.jpg" alt=""></a>
+        </div>
+      </div>
+      <div class="bg-primary-subtle me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+          <h2 class="display-5">Les Musées de Marseille</h2>
+          <p class="lead"></p>
+        </div>
+        <div class="bg-primary-subtle shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+          <a class="icon-link" href="https://musees.marseille.fr/">
+          <img class="bg-body-tertiary w-100 h-85"  src="img/Marseille/1493038628567.jpg" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </main>
+  </section>
+
+ 
+  <section class="align-items-center p-3">
+    <img src="img/Marseille/EntreeduVieux-Port-Mucem-couv©Lamy-OTCM.jpg" alt="" class="align-items-center">
+    <hr>
+  <img src="img/Marseille/11357606yqxql.jpg" alt="">
+  <hr>
+  <img src="img/Marseille/map-hp-zoomcentreville-2.svg" alt="">
+  </section>
+  <footer class="row">
+    <img src="img/Marseille/logo - Copie.svg" alt="" width="300" height="300">
+    <img src="img/Marseille/logo-made-in-marseille-420x60-1 - Copie.png" alt="" class="bg-info-subtle">
+  </footer>
+  
+ 
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
