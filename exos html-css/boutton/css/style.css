@@ -1,0 +1,59 @@
+body {
+    font-family: sans-serif;
+    background: #dedede;
+    padding: 48px;
+  }
+  
+  h1 {
+    text-align: center;
+    display: inline-block;
+    font-size: 72px;
+  }
+  /* On cache l'input de base */
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  /* On stylise le label pour faire le fond */
+  
+  label {
+    /* De base c'est un inline */
+    display: block;
+    /* Dés qu'on passe avec la souris, ça nous donne une indication */
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(202, 223, 226);
+    border-radius: 25px;
+    margin: 250px auto 0 auto;
+    /* vitesse normal au début, ralecti vers la fin */
+    transition: all 0.4s ease-out;
+  }
+  
+  /* on va creer le rond, le bouton */
+  
+  label::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(141, 172, 175);
+    border-radius: 50%;
+    /* vitesse normal au début, ralecti vers la fin */
+    transition: all 0.4s ease-out;
+  }
+  
+  /* Quand on va cliquer dessus, on va cibler le label */
+  /* On va changer le background */
+  input:checked + label {
+    background-color: rgb(150, 239, 184);
+  }
+  
+  input:checked + label::after {
+    transform: translate(50px, 0);
+    background-color: rgb(29, 105, 52);
+  }
+  

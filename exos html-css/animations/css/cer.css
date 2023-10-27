@@ -1,0 +1,58 @@
+body {
+    font-family: sans-serif;
+    background: #dedede;
+    padding: 48px;
+  }
+  
+  h1 {
+    text-align: center;
+    display: inline-block;
+    font-size: 72px;
+  }
+  body {
+    background: radial-gradient(circle at bottom, #9fb8d1 0%, #0c1753 100%);
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  circle {
+    fill: none;
+  
+    stroke: #fff;
+  
+    stroke-width: 10px;
+  
+    stroke-dasharray: 100 100;
+  
+    stroke-dashoffset: 70;
+  
+    animation: rotation 2000ms ease-in-out alternate infinite;
+  }
+  
+  /* Maintenant, il va falloir la créer, l'anim */
+  
+  /* On va le cloner */
+  svg {
+    /* ça va le décaler vers la gauche */
+    transform: translateX(-50px);
+    /* Après on utilise filter pour cloner */
+    /*drop-shadow : son double va se décaler (sur x et y) ici vers la droite de 100px  */
+    /* Et on lui donne une couleur */
+    filter: drop-shadow(100px 0 #00ccff);
+  }
+  
+  @keyframes rotation {
+    0% {
+      /* Les valeurs de départ à 0% */
+      stroke-dasharray: 100 100;
+      stroke-dashoffset: 70;
+    }
+    100% {
+      stroke-dasharray: 20 20;
+      /* Ici on repart en arrière pour faire un effet retro */
+      stroke-dashoffset: -600;
+    }
+  }

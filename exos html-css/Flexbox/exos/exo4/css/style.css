@@ -1,0 +1,79 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(202, 200, 200);
+}
+.container{
+    /* background-color: cadetblue; */
+    height: 100vh;
+    width: 40vw;
+}
+.marron{
+    border: 10px solid maroon;
+    height: 180px;
+    margin: 30px;
+}
+.bleu{
+    display: flex;
+    height: 50vh;
+    margin: 10px 30px;
+}
+.quatreDiv{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 15px;
+    /* background-color: rebeccapurple; */
+}
+
+.bleuClair1{
+    border: 10px solid blue;
+    height: 10vh;
+    margin-bottom: 15px;
+}
+.bleuClair2{
+    border: 10px solid blue;
+    height: 10vh;
+    margin-bottom: 15px;
+}
+.bleuClair3{
+    border: 10px solid blue;
+    height: 10vh;
+    margin-bottom: 15px;
+}
+.bleuClair4{
+    border: 10px solid blue;
+    height: 10vh;
+    margin-bottom: 15px;
+}
+.bleuClair5{
+    border: 10px solid blue;
+    height: 10vh;
+}
+
+.troisDiv{
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    margin-left: 15px;
+}
+.bleuFonce1{
+    border: 10px solid rgba(7, 7, 133, 0.851);
+    height: 20vh;
+    margin-bottom: 15px;
+}
+.bleuFonce2{
+    border: 10px solid rgba(7, 7, 133, 0.851);
+    height: 20vh;
+    margin-bottom: 15px;
+}
+.bleuFonce3{
+    border: 10px solid rgba(7, 7, 133, 0.851);
+    height: 20vh;
+}
+.vert{
+    border: 10px solid green;
+    height:12vh ;
+    margin:30px;
+}

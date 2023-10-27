@@ -1,0 +1,57 @@
+body {
+  font-family: sans-serif;
+  background: #dedede;
+  padding: 48px;
+}
+
+h1 {
+  text-align: center;
+  display: inline-block;
+  font-size: 72px;
+}
+.flex-container {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100px;
+  background: green;
+  margin: 10px 0;
+}
+
+.flex-elem {
+  background: orange;
+  width: 50px;
+  /* Remarquez que nous utilisons une hauteur minimale, mais
+    pas de hauteur fixe, ni de hauteur maximale.  */
+  min-height: 50px;
+  margin: 5px;
+}
+
+.elem2 {
+  min-height: 30px;
+  font-size: 2em;
+}
+
+.elem3 {
+  font-size: 1.2em;
+  min-height: 70px;
+}
+
+.flex-start {
+  align-items: flex-start;
+}
+
+.flex-end {
+  align-items: flex-end;
+}
+
+.center {
+  align-items: center;
+}
+
+.stretch {
+  align-items: stretch;
+}
+
+.baseline {
+  align-items: baseline;
+}
