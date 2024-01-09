@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/exo3.css">
+
+    <title>Liste des tâches</title>
+</head>
+<body>
+
+<div class="ajouter">
+
+    <h1>Liste des tâches</h1>
+ <form>
+    <input type="text" id="ajouter"  value="Ajouter une nouvelle tâche"><br>
+    <button type="submit" id="btn" onclick="togegleResultat" value="Ajouter">Ajouter</button> 
+ </form>
+       
+  
+
+</div>
+<div class="resultat">
+    <form action="">
+        <input type="text" id="ajouter"  value="Ajouter une nouvelle tâche"><br>
+        <button type="submit" onclick="togegleResultat" value="Ajouter"></button> 
+    </form>
+       
+    
+    <div class="tache">
+        <h2>faire les courses</h2>
+        <form>
+            <button type="submit" class="Modifier" onclick="togegleModifier"></button><br>
+            <button type="reset" onclick="togegleResultat" value="Supprimer"></button>
+        </form>
+
+                
+    </div>
+</div>
+
+
+<div class="pop">
+    <h2>Cette page indique</h2>
+    <p>Modifier la tâche:</p>
+    <div>
+        <form action="">
+            <input type="text" id="modif" value="faire les courses"><br>
+
+            <button type="submit" class="valider" onclick="togegle"></button><br>
+                <button type="reset" id="annuler" onclick="togegleResultat" value="Annuler"></button>
+        </form>
+      
+    </div>
+   
+</div>
+
+<input type="button" value="Hide text" 
+onclick="document.getElementById('p1').style.visibility='hidden'">
+
+<input type="button" value="Show text"
+onclick="document.getElementById('p1').style.visibility='visible'">
+
+<p id="demo">JavaScript can change HTML content.</p>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+<p id="demo">JavaScript can hide HTML elements.</p>
+
+<button type="button" onclick="document.getElementById('demo').style.display='none'">Click Me!</button>
+
+<p>JavaScript can show hidden HTML elements.</p>
+
+<p id="demo" style="display:none">Hello JavaScript!</p>
+
+<button type="button" onclick="document.getElementById('demo').style.display='block'">Click Me!</button>
+
+<script src="js/exo3.js"></script>
+</body>
+</html>

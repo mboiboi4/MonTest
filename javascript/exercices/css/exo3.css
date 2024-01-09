@@ -1,0 +1,75 @@
+body{
+    
+    
+    
+    background-color: beige;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.ajouter{
+   position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 800px;
+    padding: 2em;
+    background-color: rgb(198, 204, 204);
+    padding: 50px;
+    margin: 200px;
+}
+.ajouter h1{
+   
+   
+    margin-top: -200px;
+}
+
+.resultat{
+    display: flex;
+    position: relative;
+    margin-left: -1300px;
+    height: 100%;
+    width: 250px;
+    padding: 1em;
+    background-color: rgb(245, 247, 247);
+    border: solid thin rgb(237, 120, 36);
+    transition: background-color 0.3s;
+}
+.pop{
+    display: flex;
+    position: relative;
+    margin-left: -1200px;
+    height: 100%;
+    width: 250px;
+    padding: 1em;
+    background-color: rgb(13, 13, 13);
+    border: solid thin rgb(237, 120, 36);
+    transition: background-color 0.3s;
+
+}
+input{
+    width: 300px;
+    height: 60px;
+    border-radius: 30px;
+}
+button{
+    padding: 10px 12px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    min-width: 150px;
+    text-align: center;
+    margin-top: 1em;
+}
+form {
+    /* On centre le formulaire */
+    margin: 0 auto;
+    width: 600px;
+    /* Le contour du formulaire */
+    padding: 2em;
+    border-radius: 1em;
+}
+
+
+  

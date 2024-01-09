@@ -1,0 +1,26 @@
+body{
+    color: white;
+    background-color: rgb(5, 47, 47);
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.menu{
+    display: flex;
+    position: absolute;
+    margin-left: -250px;
+    height: 100%;
+    width: 250;
+    padding: 1em;
+    background-color: aqua;
+    border: solid thin rgb(237, 120, 36);
+    transition: background-color 0.3s;
+}
+
+
+#menu a:hover{
+    background-color: rgb(19, 195, 19);
+
+}
+#main{
+    transition: 0.3s;
+}
